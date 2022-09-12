@@ -45,6 +45,8 @@ namespace ProductApps
             totalChargeTextBox.Text = Convert.ToString(cProduct.TotalPayment + 25.0m);
 
             totalWrapTextBox.Text = Convert.ToString(cProduct.TotalPayment + 25.0m + 5.0m);
+
+            totalGSTBox.Text = Convert.ToString((cProduct.TotalPayment + 25.0m + 5.0m) * 1.1m);
         }
 
         private void clearButton_Click(object sender, RoutedEventArgs e)

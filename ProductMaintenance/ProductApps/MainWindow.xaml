@@ -1,7 +1,7 @@
 ﻿<Window x:Class="ProductApps.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="MainWindow" Height="350" Width="525">
+        Title="MainWindow" Height="413.288" Width="525">
     <Grid>
         <Label Content="Product:" HorizontalAlignment="Left" Height="30" Margin="46,37,0,0" VerticalAlignment="Top" Width="61"/>
         <Label Content="Price $:" HorizontalAlignment="Left" Height="30" Margin="46,78,0,0" VerticalAlignment="Top" Width="61"/>
@@ -14,6 +14,9 @@
         <Label Content="Total Charge after adding &#xA;the wrap charge($5) " HorizontalAlignment="Left" Height="53" Margin="48,258,0,0" VerticalAlignment="Top" Width="151"/>
         <TextBox Name="totalWrapTextBox" HorizontalAlignment="Left" Height="23" Margin="199,267,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="75"/>
 
+        <Label Content="total charge after GST @10%" HorizontalAlignment="Left" Height="53" Margin="48,311,0,0" VerticalAlignment="Top" Width="170"/>
+        <TextBox Name="totalGSTBox" HorizontalAlignment="Left" Height="23" Margin="218,311,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="75"/>
+
 
         <TextBlock Name="totalPaymentTextBlock" HorizontalAlignment="Left" Height="23" Margin="164,167,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="75"/>
         <TextBox Name="productTextBox" HorizontalAlignment="Left" Height="24" Margin="122,37,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="96"/>
@@ -22,6 +25,7 @@
         <Button Name="calculateButton" Content="_Calculate" HorizontalAlignment="Left" Height="37" Margin="327,152,0,0" VerticalAlignment="Top" Width="122" Click="calculateButton_Click"/>
         <Button Name="clearButton" Content="C_lear" HorizontalAlignment="Left" Height="34" Margin="327,209,0,0" VerticalAlignment="Top" Width="122" Click="clearButton_Click"/>
         <Button Name="closeButton" Content="Cl_ose" HorizontalAlignment="Left" Height="34" Margin="327,264,0,0" VerticalAlignment="Top" Width="122" Click="closeButton_Click"/>
+       
 
 
     </Grid>
