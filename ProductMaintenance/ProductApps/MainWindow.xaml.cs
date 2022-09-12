@@ -21,6 +21,7 @@ namespace ProductApps
     public partial class MainWindow : Window
     {
         Product cProduct;
+        //int delivery = 25.0m;
 
         public MainWindow()
         {
@@ -29,6 +30,7 @@ namespace ProductApps
 
         private void calculateButton_Click(object sender, RoutedEventArgs e)
         {
+            
             try
             {
                 cProduct = new Product(Convert.ToDecimal(priceTextBox.Text), Convert.ToInt16(quantityTextBox.Text));
@@ -39,6 +41,8 @@ namespace ProductApps
             {
                 MessageBox.Show("Enter data again", "Data Entry Error");
             }
+            // added code
+            totalChargeTextBox.Text = Convert.ToString((cProduct.TotalPayment) + 25.0m);
         }
 
         private void clearButton_Click(object sender, RoutedEventArgs e)
